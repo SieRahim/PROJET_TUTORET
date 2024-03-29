@@ -1,0 +1,14 @@
+.lien_caracteristeque {
+  margin-top: 31px;
+  height: 38px;
+  width: 90px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 3px;
+  margin-left: 11px;
+}
+a {
+  text-decoration: none;
+}

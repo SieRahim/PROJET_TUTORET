@@ -1,0 +1,33 @@
+.section {
+  height: 100vh;
+  /* background-image: url(/mages/fondForm.png); */
+  padding: 100px !important;
+  background-size: cover;
+  display: grid;
+  justify-items: center;
+  /* width: 60%; */
+  /* background-color: rgb(253, 255, 127); */
+}
+.disposition_formulaire {
+  /* padding-top: 30px; */
+  width: 50%;
+  margin: 20px;
+  padding-bottom: 10px;
+  background-color: rgba(255, 0, 43, 0.212);
+  border-radius: 5px;
+}
+
+.position_bouton {
+  margin-top: 30px;
+  /* margin-bottom: 3px; */
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+.disposition_titre {
+  margin-top: 10px;
+  /* margin-bottom: 3px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
