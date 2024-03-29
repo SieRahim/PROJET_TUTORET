@@ -1,4 +1,7 @@
 .section {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
   background-image: url(images/arriere_plan_inscription.jpeg);
   background-repeat: no-repeat !important;
   height: 100vh;
