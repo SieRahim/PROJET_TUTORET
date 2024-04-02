@@ -1,7 +1,7 @@
 .lien_caracteristeque {
   margin-top: 31px;
   height: 38px;
-  width: 90px;
+  width: 150px !important;
   text-align: center;
   display: flex;
   flex-direction: column;

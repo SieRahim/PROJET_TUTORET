@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 
-
 <html lang="en">
 
 <head>
@@ -8,7 +7,7 @@
     <!-- Basic Page Needs
   ================================================== -->
     <meta charset="utf-8">
-    <title>Connexion</title>
+    <title>Inscription</title>
 
     <!-- Mobile Specific Metas
   ================================================== -->
@@ -21,9 +20,6 @@
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
 
-    <!-- CSS
-  ================================================== -->
-    <!-- Themefisher Icon font -->
     <link rel="stylesheet" href="plugins/themefisher-font/style.css">
     <!-- bootstrap.min css -->
     <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
@@ -36,8 +32,9 @@
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
     <!-- inscrition css -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/connexion.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <!-- formulaire d'insription -->
+    <link rel="stylesheet" href="/css/inscription.css">
 
 </head>
 
@@ -56,13 +53,6 @@
             <span></span>
         </div>
     </div>
-    <!--
-  End Preloader
-  ==================================== -->
-
-    <!--
-Fixed Navigation
-==================================== -->
     <header class="navigation fixed-top">
         <div class="container">
             <!-- main nav -->
@@ -117,60 +107,129 @@ End Fixed Navigation
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <marquee>
-                        <h2> Connexion au compte personnel</h2>
-                    </marquee>
-
+                    <h2>Inscription sur la plateforme</h2>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- formulaire de connexion -->
-    <section class="section w-100 pt-5">
-
-        <div class="container-fluid w-100 col-lg-4 col-md-6 col-sm-6" style="border-radius: 10px !important; 
-        display: flex; align-items: center; justify-content: center;">
-            <form class="form pl-4 pr-4 w-100">
+    <!-- formulaire d'inscription -->
+    <section class="section w-100 pt-3 pb-2 mb-0"
+        style="background-color: rgba(31, 19, 3, 0.315); position: sticky; overflow: scroll; z-index: 9;">
+        <div class="container w-100 col-lg-6 col-md-6 col-sm-12"
+            style="border-radius: 10px !important; background-color: rgba(238, 232, 225, 0.219);">
+            <form class="form pl-4 pr-4 w-100   ">
                 <div class="row">
-                    <div class="col-sm-12 col-md-12 col-lg-12 w-100 text-white" style="display: flex; justify-items: center;
-                     justify-content: center;">CONNEXION
+                    <div class="col-sm-12 col-md-12 col-lg-6" id="bloc1">
+                        <label for="exampleFormControlInput1" class="form-label">Nom <span
+                                style="color:red">*</span></label>
+                        <input id="Nom" name="Nom" type="text" class="form-control" required>
                     </div>
-                    <div class=" col-sm-12 col-md-12 col-lg-12">
-                        <label for="INE" class="form-label pt-0 text-white">INE</label>
+                    <div class="col-sm-12 col-md-12 col-lg-6" id="bloc2">
+                        <label for="exampleFormControlInput1" class="form-label">Prénom <span
+                                style="color:red">*</span></label>
+                        <input id="Prénom" name="Prénom" type="text" class="form-control" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-6" id="bloc3">
+                        <label for="INE" class="form-label pt-0">INE <span style="color:red">*</span></label>
                         <input id="INE" type="text" class="form-control" required>
                     </div>
-                    <div class=" col-sm-12 col-md-12 col-lg-12">
-                        <label for="exampleFormControlInput1" class="form-label text-white">Mot de passe</label>
+                    <div class="col-sm-12 col-md-12 col-lg-6" id="bloc4">
+                        <label for="Date" class="form-label">Date de naissance <span style="color:red">*</span></label>
+                        <input id="exampleFormControlInput1" type="date" class="form-control" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-6" id="bloc5">
+                        <label for="exampleFormControlInput1" class="form-label ">Niveau <span
+                                style="color:red">*</span></label>
+                        <input id="exampleFormControlInput1" type="text" class="form-control" required>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-6" id="bloc6">
+                        <label for="exampleFormControlInput1" class="form-label">Domaine <span
+                                style="color:red">*</span></label>
+                        <input id="exampleFormControlInput1" type="text" class="form-control" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-6" id="bloc7">
+                        <label for="exampleFormControlInput1" class="form-label">Specialité <span
+                                style="color:red">*</span></label>
+                        <input id="exampleFormControlInput1" type="text" class="form-control" required>
+                    </div>
+
+                    <div class="col-sm-12 col-md-12 col-lg-6" id="bloc8">
+                        <label for="exampleFormControlInput1" class="form-label">Thème <span
+                                style="color:red;">*</span></label>
+                        <input id="TexampleFormControlInput1" type="text" class="form-control required" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-6" id="bloc9">
+                        <label for="exampleFormControlInput1" class="form-label">Encadreur(1) <span
+                                style="color:red">*</span></label>
+                        <input id="exampleFormControlInput1" type="text" class="form-control"
+                            placeholder="Nom et Prénom" required>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-6" id="bloc9">
+                        <label for="exampleFormControlInput1" class="form-label">Encadreur(2) <span
+                                style="color:red">*</span></label>
+                        <input id="exampleFormControlInput1" type="text" class="form-control"
+                            placeholder="Nom et Prénom">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-6" id="bloc10">
+                        <label for="exampleFormControlInput1" class="form-label">Code secret <span
+                                style="color:red">*</span></label>
+                        <input id="exampleFormControlInput1" name="Code" type="text" class="form-control"
+                            placeholder="Entrer le code secret" required>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-6" id="bloc11">
+                        <label for="exampleFormControlInput1" class="form-label">E-mail <span
+                                style="color:red">*</span></label>
+                        <input id="exampleFormControlInput1" type="email" class="form-control" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-6" id="bloc12">
+                        <label for="exampleFormControlInput1" class="form-label">Mot de passe <span
+                                style="color:red">*</span></label>
                         <input id="exampleFormControlInput1" name="E-mail" type="password" class="form-control"
                             required>
                     </div>
-                    <div class="col-sm-12 col-md-12 col-lg-12">
-                        <button type="submit" class="btn btn-control
-                     bg-primary text-white w-100 mt-3" style="display: flex; justify-items: center;
-                     justify-content:center;">Se connecter</button>
-                        <div class="text-white"><a style="text-decoration: underline; color: white;" href="#">Mot de
-                                passe
-                                oublié ?</a></div>
+                    <div class="col-sm-12 col-md-12 col-lg-6" id="bloc13">
+                        <label for="exampleFormControlInput1" class="form-label">Confirmez le mot de passe <span
+                                style="color:red">*</span></label>
+                        <input id="exampleFormControlInput1" name="password" type="password" class="form-control"
+                            required>
+                    </div>
+                    <div class=" ml-0 col-sm-12 col-md-12 col-lg-12 mt-2">
+                        <button type="submit"
+                            class="btn btn-control bg-primary mb-3  w-100 text-white">Enregistrer</button>
+                    </div>
+                    <div class="ml-0 col-sm-12 col-md-12 col-lg-12">
+                        <a style="color:black; text-decoration: underline;" href="connexion.html">J'ai déja un
+                            compte</a>
                     </div>
                 </div>
-
 
             </form>
         </div>
     </section>
-    <!-- fin formulaire de connexion -->
+    <!-- fin formulaire d'inscription -->
 
 
-    <footer id="footer" class="bg-one mt-0">
+    <footer id="footer" class="bg-one mt-3">
         <div class="top-footer">
             <div class="container">
                 <div class="row justify-content-around">
                     <div class="col-sm-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
                         <h3>about</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum animi
-                            officia, quam laborum nobis sequi pariatur incidunt fugiat libero alias
-                            necessitatibus quidem, veritatis vero tempore quae officiis accusantium iusto. Omnis.</p>
+                        <p>Integer posuere erat a ante venenati dapibus posuere velit aliquet. Fusce dapibus, tellus
+                            cursus commodo, tortor mauris sed posuere.</p>
                     </div>
                     <!-- End of .col-sm-3 -->
 
@@ -188,6 +247,7 @@ End Fixed Navigation
                     <!-- End of .col-sm-3 -->
 
                     <div class=" col-sm-12 col-md-6 col-lg-4 mb-5 mb-md-0">
+
                         <ul>
                             <li>
                                 <h3>Assistance</h3>
