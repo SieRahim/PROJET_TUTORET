@@ -31,6 +31,7 @@
    <link rel="stylesheet" href="css/custom.css" />
    <!-- calendar file css -->
    <link rel="stylesheet" href="js/semantic.min.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body class="inner_page profile_page">
@@ -52,7 +53,7 @@
                      </div>
                      <div class="user_info">
                         <h6>Administrateur</h6>
-                        <p><span class="online_animation"></span> Online</p>
+                        <p><span class="online_animation"></span></p>
                      </div>
                   </div>
                </div>
@@ -61,8 +62,8 @@
                <h4>General</h4>
                <ul class="list-unstyled components">
                   <li class="active">
-                     <a href="#dashboard" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
-                           class="fa fa-dashboard yellow_color"></i> <span>Exposés par domaine</span></a>
+                     <a href="#dashboard" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fa-solid fa-file yellow_color"></i><span>Exposés par domaine</span></a>
                      <ul class="collapse list-unstyled" id="dashboard">
                         <li>
                            <a href="liste_exposes_maths.html">> <span>Mathématiques</span></a>
@@ -86,16 +87,16 @@
                   </li>
 
                   <li>
-                     <a href="#element" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
-                           class="fa fa-diamond purple_color"></i> <span>Doctorants</span></a>
+                     <a href="#element" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fa-solid fa-user-tie yellow_color"></i> <span>Doctorants</span></a>
                      <ul class="collapse list-unstyled" id="element">
                         <li><a href="liste_doctorants.html">> <span>Liste</span></a></li>
                         <li><a href="#">> <span> Ajouter</span></a></li>
                      </ul>
                   </li>
                   <li>
-                     <a href="#apps" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
-                           class="fa fa-object-group blue2_color"></i> <span>Encadreurs</span></a>
+                     <a href="#apps" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fa-solid fa-user-graduate yellow_color "></i> <span>Encadreurs</span></a>
                      <ul class="collapse list-unstyled" id="apps">
                         <li><a href="liste_encadreurs.html">> <span>Liste</span></a></li>
                         <li><a href="#">> <span>Ajouter</span></a></li>
@@ -140,7 +141,6 @@
                   <div class="row column_title">
                      <div class="col-md-12">
                         <div class="page_title">
-                           <h2>Profile</h2>
                         </div>
                      </div>
                   </div>
@@ -149,11 +149,6 @@
                      <div class="col-md-2"></div>
                      <div class="col-md-8">
                         <div class="white_shd full margin_bottom_30">
-                           <div class="full graph_head">
-                              <div class="heading1 margin_0">
-                                 <h2>Mon profile</h2>
-                              </div>
-                           </div>
                            <div class="full price_table padding_infor_info">
                               <div class="row">
                                  <!-- user profile section -->
@@ -164,16 +159,34 @@
                                              src="images/layout_img/user_img.jpg" alt="#" /></div>
                                        <div class="profile_contant">
                                           <div class="contact_inner">
-                                             <h3>Nom et Prenom</h3>
-                                             <p><strong>Titre: </strong>Docteur</p>
-                                             <ul class="list-unstyled">
-                                                <li><i class="fa fa-envelope-o"></i> : docteur@gmail.com</li>
-                                                <li><i class="fa fa-phone"></i> : 00 00 00 00</li><br>
-                                                <p><strong>Role: </strong>Administrateur</p>
-                                             </ul>
-                                          </div>
-                                          <div class="user_progress_bar">
+                                             <table>
+                                                <thead>
 
+                                                </thead>
+                                                <tbody>
+                                                   <tr>
+                                                      NOM: <span></span>
+                                                   </tr><br><br>
+                                                   <tr>
+                                                      PRENOM: <span></span>
+                                                   </tr><br><br>
+                                                   <tr>
+                                                      TITRE: <span></span>
+                                                   </tr><br><br>
+                                                   <tr>
+                                                      SPECIALITE: <span></span>
+                                                   </tr><br><br>
+                                                   <tr class="list-unstyled">
+                                                      <li style="list-style: none;">
+                                                         <i class="fa fa-envelope-o">
+                                                         </i>docteur@gmail.com
+                                                      </li><br><br>
+                                                      <li style="list-style: none;"><i class="fa fa-phone"></i> : 00 00
+                                                         00 00</li><br>
+                                                   </tr><br>
+
+                                                </tbody>
+                                             </table>
                                           </div>
                                        </div>
                                     </div>
@@ -186,9 +199,10 @@
                                                    <a class="nav-item nav-link btn btn-success " type="button"
                                                       id="nav-profile-tab" data-toggle="tab" href="#project_worked"
                                                       role="tab" aria-selected="false">Conserver</a>
-                                                   <a class="nav-item nav-link btn btn-danger " type="button"
-                                                      id="nav-profile-tab" data-toggle="tab" href="#project_worked"
-                                                      role="tab" aria-selected="false">Modifier</a>
+                                                   <a class="nav-item nav-link btn btn-danger "
+                                                      style="margin-left: 3px;" type="button" id="nav-profile-tab"
+                                                      data-toggle="tab" href="#project_worked" role="tab"
+                                                      aria-selected="false">Modifier</a>
                                                 </div>
                                              </nav>
 
@@ -241,6 +255,7 @@
    <script src="js/custom.js"></script>
    <!-- calendar file css -->
    <script src="js/semantic.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
 </body>
 
 </html>
